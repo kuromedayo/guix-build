@@ -15,4 +15,4 @@ jobs:
           sudo apt-get install guix
       - name: Build
         run: |
-          guix build -L . my-hello
+          guix build -L . fontconfig
