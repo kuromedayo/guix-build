@@ -13,3 +13,6 @@ jobs:
       - name: Install guix
         run: |
           sudo apt-get install guix
+      - name: Build
+        run: |
+          guix build -L . my-hello
