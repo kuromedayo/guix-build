@@ -1,0 +1,13 @@
+name: Build Guix Packages
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Install guix
+        run: |
+          sudo apt-get update
+          sudo apt-get install guix
