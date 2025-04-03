@@ -7,7 +7,9 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: Install guix
+      - name: apt-get update
         run: |
           sudo apt-get update
+      - name: Install guix
+        run: |
           sudo apt-get install guix
