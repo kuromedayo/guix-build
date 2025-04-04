@@ -68,6 +68,7 @@
         (file-name (git-file-name name version))
         (sha256
          (base32 "1jys54w1dsj1pklrpbxssdlryffvgahfjpgzmd8cnw0z2kjazjjz"))
+        ;; TODO: Update patch if necessary
         ;; (patches (search-patches "fontconfig-cache-ignore-mtime.patch"))
         ))
      (build-system gnu-build-system)
